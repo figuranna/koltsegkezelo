@@ -193,7 +193,7 @@ public class Metodusok {
                 System.out.println("Nincsenek havi költségei ebben a hónapban.\r\n");
             }
             else{
-                if(ho.equals(biztos.getHo())){
+                if(ho.equals(biztos.getHo())||ho >= biztos.getHo()){
                     System.out.println(biztos);
                 }
             }
@@ -226,7 +226,7 @@ public class Metodusok {
             System.out.println("\r\nNincs ilyen számú hónap.\r\n");
         }
         if(pluszMinusz.isEmpty() && biztosMinusz.isEmpty()){
-            System.out.println("Nincsenek költsége ebben a hónapban.\r\n");
+            System.out.println("\r\nNincs költsége ebben a hónapban.\r\n");
         }
         else{
             pluszKoltsegKiir(pluszMinusz, ho);
@@ -239,7 +239,7 @@ public class Metodusok {
         ossz = 0;
         
         for(pluszKoltseg plus : pluszMinusz){
-            if(Objects.equals(ho, fio.beolvasas(osszKoltseg.honap))){
+            if(ho.equals(plus.getHo())){
                 ossz += plus.getPlusz();
                 return ossz;
             }      
@@ -253,7 +253,7 @@ public class Metodusok {
         ossz1 = 0;
         
         for(biztosKoltseg biztos : biztosMinusz){
-            if(Objects.equals(ho, fio.beolvasas(osszKoltseg.honap))){
+            if(ho.equals(biztos.getHo())||ho >= biztos.getHo()){
                 ossz1 += biztos.getHaviKiadas().getAr();
                 return ossz1;
             }
@@ -263,15 +263,26 @@ public class Metodusok {
     }
     
     public static Integer osszKoltsegOsszead(ArrayList<pluszKoltseg> pluszMinusz, ArrayList<biztosKoltseg> biztosMinusz, Integer ho){
-        
+        int d = 0, dd = 0, h = 0, hh =0;
         ossz2 = 0;
-        
-        if(Objects.equals(ho, fio.beolvasas(osszKoltseg.honap))){
-            ossz2 = pluszKoltsegOsszead(pluszMinusz, ho) + biztosKoltsegOsszead(biztosMinusz, ho);
-        return ossz2;
+        for(pluszKoltseg plus : pluszMinusz){
+            if(ho.equals(plus.getHo())){
+                d += plus.getPlusz();
+                h = -1;
+            }
+        }
+        for(biztosKoltseg biztos : biztosMinusz){
+            if(ho.equals(biztos.getHo())||ho >= biztos.getHo()){
+                dd += biztos.getHaviKiadas().getAr();
+                hh = -1;
+            }
+        }
+        if(h == 0 && hh == 0){
+            return -1;
         }
         else{
-            return -1;
+            ossz2 = d + dd;
+            return ossz2;
         }
     }
 }
