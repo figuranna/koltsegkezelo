@@ -3,13 +3,14 @@ package koltseg.controller;
 import java.util.ArrayList;
 import java.util.Scanner;
 import koltseg.business.Metodusok;
-import static koltseg.business.Metodusok.biztosKoltsegHozzaad;
 import koltseg.business.biztosKoltseg;
+import koltseg.business.os.osszKoltseg;
 import koltseg.business.pluszKoltseg;
 import koltseg.fio.fio;
 
 public class Controller {
     private static final Scanner scn = new Scanner(System.in);
+    private static Integer hoh = fio.beolvasas(osszKoltseg.honap);
     private static final ArrayList<pluszKoltseg> plusKoltseg = fio.beolvaspluszKoltseg();
     private static final ArrayList<biztosKoltseg> biztosKoltseg = fio.beolvasbiztosKoltseg();
 
@@ -31,7 +32,7 @@ public class Controller {
                     case 4:Metodusok.hoLepes(biztosKoltseg);mainMenu();break;
                     case 5:listazas();mainMenu();break;
                     case 6:osszeg();mainMenu();break;
-                    case 7:System.out.println("Program leállítása...");break;
+                    case 7:System.out.println("Program leállítása...");System.exit(0);break;
                     default: System.out.println("A program nem tudja értelmezni a kérését.\n");mainMenu();break;
                 }
             }
@@ -105,7 +106,7 @@ public class Controller {
         int ho;
 
         try{
-            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát: ");
+            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát 1-től " + hoh + "-ig :");
             ho = scn.nextInt();
         
             Metodusok.biztosKoltsegKiir(lista, ho);
@@ -121,7 +122,7 @@ public class Controller {
         int ho;
 
         try{
-            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát: ");
+            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát 1-től " + hoh + "-ig :");
             ho = scn.nextInt();
 
             Metodusok.pluszKoltsegKiir(lista, ho);
@@ -138,7 +139,7 @@ public class Controller {
         int ho;
         
         try{
-            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát: ");
+            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát 1-től " + hoh + "-ig :");
             ho = scn.nextInt();
 
             Metodusok.osszKoltsegKiir(lista ,listaa ,ho);
@@ -155,7 +156,7 @@ public class Controller {
         int ho;
 
         try{
-            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát: ");
+            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát 1-től " + hoh + "-ig :");
             ho = scn.nextInt();
 
             if(Metodusok.biztosKoltsegOsszead(lista, ho).equals(-1)){
@@ -175,7 +176,7 @@ public class Controller {
         int ho;
 
         try{
-            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát: ");
+            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát 1-től " + hoh + "-ig :");
             ho = scn.nextInt();
 
             if(Metodusok.pluszKoltsegOsszead(lista, ho).equals(-1)){
@@ -195,7 +196,7 @@ public class Controller {
         int ho;
 
         try{
-            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát: ");
+            System.out.println("\r\nKérem adja meg a vizsgálni kívánt hónap sorszámát 1-től " + hoh + "-ig :");
             ho = scn.nextInt();
 
             if(Metodusok.osszKoltsegOsszead(lista ,listaa ,ho).equals(-1)){
