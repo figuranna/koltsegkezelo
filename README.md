@@ -21,7 +21,7 @@ A program logikai alapját adja meg, a *fio*-n keresztül beolvasott adatokat do
 - biztosKoltseg
 - pluszKoltseg
 ### Controller
-A felhasználói interface működését biztosítja.
+A User Interface működését biztosítja.
 
 **Osztálya(i)**: 
 - Controller
@@ -57,3 +57,13 @@ A logikai műveleteket végzi el a programban.
 - ***pluszKoltsegHozzaad, biztosKoltsegHozzad***: Új költséget ad az aktuális hónaphoz vagy hónaptól.
 - ***pluszKoltsegKiir, biztosKoltsegKiir, osszKoltsegKiir***: tételesen kiírja a megadott havi költségeket.
 - ***pluszKoltsegOsszead, biztosKoltsegOsszead, osszKoltsegOsszead***: A megadott havi költségek összegét számolja ki.
+### Controller
+A felhasználóval való kapcsolattartás és a User Interface működését biztosítja.
+
+**Metódusok**:
+- ***start***: Üdvözli a felhasználót, majd fizetés olvassa be és módosítja, ha a felhasználó azt úgy kívánja.
+- ***mainMenu***: Kilistázza az összes menüpontot a felhasználó számára és be is kéri a választását.
+- ***listazas***: Kilistázza az eddig bevitt költségeket a rendszerbe.
+- ***osszeg***: Menüpontokat listáz ki, mellyel megadhatjuk a kiszámítandó összeg típusát.
+- ***biztoskoltsegKiir, pluszkoltsegKiir, osszkoltsegKiir***: Kiírja az adott hónapban felvitt költségeket
+- ***biztosOsszegSzamito, pluszOsszegSzamito, osszOsszegSzamito***: Kiszámítja az adott hónapban felvitt költségeket
