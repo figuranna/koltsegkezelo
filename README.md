@@ -34,6 +34,7 @@ A felhasználói interface működését biztosítja.
 - osszKoltseg: költség neve [string], hónap sorszáma [int]
 - biztosKoltseg: (*költség neve [string], hónap sorszáma [int]*), költség típusa [BiztosEnum]
 - pluszKoltseg: (*költség neve [string], hónap sorszáma [int]*), költség mennyisége [int]
+
 **Metódusok**:
 - Konstruktorok
 - Getter metódusok
