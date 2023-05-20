@@ -25,3 +25,12 @@ A felhasználói interface működését biztosítja.
 
 **Osztálya(i)**: 
 - Controller
+
+## Osztályok
+### osszKoltseg (*ősosztály*), biztosKoltseg, pluszKoltseg
+**Feladatuk**:
+- Megadják a program alapvető struktúráját 
+**Osztályváltozók**:
+- osszKoltseg: költség neve [string], hónap sorszáma [int]
+- biztosKoltseg: (*költség neve [string], hónap sorszáma [int]*), költség típusa [BiztosEnum]
+- pluszKoltseg: (*költség neve [string], hónap sorszáma [int]*), költség mennyisége [int]
