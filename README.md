@@ -1,4 +1,4 @@
-# Költségkezelő
+# Költségkezelő program
 A program célja, hogy bekérje és tárolja a felhasználó által megadott fizetését és költségeit.
 ## Package-ek
 ### Fio
