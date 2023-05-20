@@ -78,7 +78,7 @@ Beolvasás és mentés műveletek végrehajtása.
 - ***ementes***: Menti az 1 adatot tartalmazó xml fájlokat.
 
 ### Koltseg
-Összefogja a programot, innen indul a program.
+Összefogja a programot, a *start()* meghívásával innen indul a program.
 
 ## XMl fájlok
 A programhoz szükséges adatokat itt tárolja.
