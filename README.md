@@ -83,10 +83,18 @@ Beolvasás és mentés műveletek végrehajtása.
 ## XMl fájlok
 A programhoz szükséges adatokat itt tárolja.
 ### biztoskoltsegek.xml
+- ***koltsegek***: A fájl gyökere
+  - ***haviKiadas***: A havi kiadás típusát tartalmazza.
+  - ***nev***: A havi kiadás elnevezését tartalmazza.
+  - ***ho***: A havi kiadás első hónapját tartalmazza.
 ### pluszkoltsegek.xml
+- ***koltsegek***: A fájl gyökere
+  - ***plusz***: A plusz kiadás összegét tartalmazza.
+  - ***nev***: A plusz kiadás elnevezését tartalmazza.
+  - ***ho***: A plusz kiadás hónapját tartalmazza.
 ### egyenleg.xml
-- Az egyenleget tárolja.
+- ***egyenleg***: A fájl gyökere és az egyetlen eleme. Az egyenleget tárolja.
 ### fizetes.xml
-- A legutóbb megadott fizetést tárolja
+- ***fizetes***: A fájl gyökere és az egyetlen eleme. A legutóbb megadott fizetést tárolja.
 ### honap.xml
-- Az aktuális hónap sorszámát tárolja
+- ***honap***: A fájl gyökere és az egyetlen eleme. Az aktuális hónap sorszámát tárolja
