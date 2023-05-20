@@ -67,3 +67,12 @@ A felhasználóval való kapcsolattartás és a User Interface működését biz
 - ***osszeg***: Menüpontokat listáz ki, mellyel megadhatjuk a kiszámítandó összeg típusát.
 - ***biztoskoltsegKiir, pluszkoltsegKiir, osszkoltsegKiir***: Kiírja az adott hónapban felvitt költségeket
 - ***biztosOsszegSzamito, pluszOsszegSzamito, osszOsszegSzamito***: Kiszámítja az adott hónapban felvitt költségeket
+
+### Fio
+Beolvasás és mentés műveletek végrehajtása.
+
+**Metódusok**:
+- ***beolvasbiztosKoltseg, beolvaspluszKoltseg***: Beolvassa a biztosköltségek és a pluszkoltsegek xml fájlokba mentett adatokat.
+- ***mentes***: Menti az adatokat a biztosköltségek és a pluszkoltsegek xml fájlokba.
+- ***beolvas***: Beolvassa az 1 adatot tartalmazó xml fájlokat (*honap,fizetes,egyenleg*)
+- ***ementes***: Menti az 1 adatot tartalmazó xml fájlokat.
