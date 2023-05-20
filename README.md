@@ -76,3 +76,17 @@ Beolvasás és mentés műveletek végrehajtása.
 - ***mentes***: Menti az adatokat a biztosköltségek és a pluszkoltsegek xml fájlokba.
 - ***beolvas***: Beolvassa az 1 adatot tartalmazó xml fájlokat (*honap,fizetes,egyenleg*)
 - ***ementes***: Menti az 1 adatot tartalmazó xml fájlokat.
+
+### Koltseg
+Összefogja a programot, innen indul a program.
+
+## XMl fájlok
+A programhoz szükséges adatokat itt tárolja.
+### biztoskoltsegek.xml
+### pluszkoltsegek.xml
+### egyenleg.xml
+- Az egyenleget tárolja.
+### fizetes.xml
+- A legutóbb megadott fizetést tárolja
+### honap.xml
+- Az aktuális hónap sorszámát tárolja
