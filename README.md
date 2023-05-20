@@ -51,9 +51,9 @@ Az XML-be való mentést segíti.
 ### Metodusok
 A logikai műveleteket végzi el a programban.
 
-- *fizetesBeker*: Itt adhatjuk meg és módosíthatjuk a fizetésünket.
-- *egyenlegMegnez*: Megmutatja az aktuális egyenlegünket.
-- *holepes*: a következő hónapba léptet
-- *pluszKoltsegHozzaad, biztosKoltsegHozzad*: Új költséget ad az aktuális hónaphoz vagy hónaptól.
-- *pluszKoltsegKiir, biztosKoltsegKiir, osszKoltsegKiir*: tételesen kiírja a megadott havi költségeket.
-- *pluszKoltsegOsszead, biztosKoltsegOsszead, osszKoltsegOsszead*: A megadott havi költségek összegét számolja ki.
+- ***fizetesBeker***: Itt adhatjuk meg és módosíthatjuk a fizetésünket.
+- ***egyenlegMegnez***: Megmutatja az aktuális egyenlegünket.
+- ***holepes***: a következő hónapba léptet
+- ***pluszKoltsegHozzaad, biztosKoltsegHozzad***: Új költséget ad az aktuális hónaphoz vagy hónaptól.
+- ***pluszKoltsegKiir, biztosKoltsegKiir, osszKoltsegKiir***: tételesen kiírja a megadott havi költségeket.
+- ***pluszKoltsegOsszead, biztosKoltsegOsszead, osszKoltsegOsszead***: A megadott havi költségek összegét számolja ki.
